@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brian — Web & Mobile Developer • Civil Engineer</title>
+  <meta name="description" content="Brian — web & mobile app developer and civil engineering student with skills in AutoCAD & ArchiCAD. I design apps and draw house plans for clients." />
+  <style>
+    :root{
+      --bg1:#071428; --panel: rgba(255,255,255,0.03);
+      --accent:#00c2ff; --muted:#9fb8c9; --cardShadow: 0 10px 30px rgba(2,6,23,0.6);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial;
+      color:#e8f6ff; background: linear-gradient(180deg,var(--bg1),#042a3a 60%);
+      -webkit-font-smoothing:antialiased; line-height:1.5;
+    }
+    .wrap{max-width:980px;margin:36px auto;padding:18px}
+    header{display:flex;gap:16px;align-items:center;margin-bottom:22px}
+    .avatar{width:88px;height:88px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#4be1a6);
+      display:flex;align-items:center;justify-content:center;font-weight:700;font-size:26px;color:#012;box-shadow:var(--cardShadow);}
+    h1{margin:0;font-size:26px}
+    .lead{margin:6px 0 0;color:var(--muted)}
+    .hero{background:linear-gradient(90deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
+      padding:20px;border-radius:12px;display:flex;gap:18px;align-items:center;box-shadow:var(--cardShadow);margin-bottom:18px}
+    .cta {margin-left:auto}
+    .btn{background:var(--accent);color:#002;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+    .card{background:var(--panel);padding:16px;border-radius:12px}
+    h2{margin-top:0}
+    .services ul{padding-left:18px}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+    .thumb{background:rgba(255,255,255,0.02);border-radius:8px;padding:6px;height:120px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .thumb img{width:100%;height:100%;object-fit:cover;border-radius:6px}
+    .socials a{display:inline-block;margin:6px 6px 0 0;padding:8px 12px;border-radius:8px;text-decoration:none;background:rgba(255,255,255,0.03);color:var(--accent);font-weight:700}
+    footer{text-align:center;color:var(--muted);margin-top:18px;font-size:14px}
+    @media (max-width:760px){
+      .grid{grid-template-columns:1fr}
+      header{gap:12px}
+      .avatar{width:68px;height:68px;font-size:20px}
+      .hero{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">BW</div>
+      <div>
+        <h1>👋 Hi — I'm Brian</h1>
+        <p class="lead">Web & Mobile App Developer • Civil Engineering student & CAD designer</p>
+      </div>
+      <div class="cta">
+        <a class="btn" href="mailto:your@email.com">Get in touch</a>
+      </div>
+    </header>
+
+    <section class="hero" aria-label="Overview">
+      <div style="flex:1">
+        <h2>What I do</h2>
+        <p>I build user-friendly web and mobile applications from idea → prototype → release. I focus on clean UIs, reliable frontends, and connected backends (APIs, databases, auth). As a civil engineering student I also produce accurate house plans and CAD drawings — a useful combo for clients who need both digital tools and built designs.</p>
+        <p style="margin-top:10px"><strong>Primary:</strong> React, React Native (Expo), Node.js, REST & GraphQL, Firebase, Web3 basics</p>
+        <p style="margin-top:4px"><strong>Secondary (CAD):</strong> AutoCAD, ArchiCAD, floor plans, elevations, DWG & PDF delivery</p>
+      </div>
+
+      <div style="width:220px;text-align:center">
+        <div style="padding:14px;border-radius:10px;background:linear-gradient(135deg,#073b4c,#0b6b8a)">
+          <strong>Available for:</strong>
+          <p style="margin:8px 0 12px;font-size:14px;color:#d9f7ff">Freelance apps, client site tools, & house plans</p>
+          <a class="btn" href="mailto:your@email.com">Request quote</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Services — Web & Mobile (Primary)</h2>
+        <ul>
+          <li>Custom web applications (React, Next.js)</li>
+          <li>Mobile apps with React Native & Expo (iOS + Android)</li>
+          <li>Backend development (Node.js, Express, Firebase)</li>
+          <li>Integrations: payments, maps, auth, cloud storage</li>
+          <li>Deployments and app store submission support</li>
+        </ul>
+
+        <h3 style="margin-top:12px">How I work</h3>
+        <ol style="padding-left:18px">
+          <li>Scope & estimate → prototype → development → testing → release</li>
+          <li>Regular updates and retries until client is satisfied</li>
+          <li>Documentation & basic maintenance available</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h2>Services — CAD & House Plans (Secondary)</h2>
+        <p>I prepare client-ready drawings: floor plans, elevations, roof plans, and simple structural annotations. Deliverables: PDF for review, DWG on request.</p>
+        <ul>
+          <li>Site & floor layout (space planning)</li>
+          <li>Elevations and basic sections</li>
+          <li>Material list & simple takeoff</li>
+          <li>Digital delivery: PDF, DWG (on request)</li>
+        </ul>
+        <p style="margin-top:10px;font-size:13px;color:var(--muted)"><strong>Note:</strong> For larger structural design work, I collaborate with structural engineers as required.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:12px">
+      <h2>Portfolio</h2>
+      <p style="margin-top:6px;margin-bottom:10px">App screenshots and sample house-plan thumbnails. Replace sample images below with your actual project images in the `images/` folder.</p>
+      <div class="gallery">
+        <a class="thumb" href="#" title="App screenshot 1"><img src="images/app1.jpg" alt="App screenshot"></a>
+        <a class="thumb" href="#" title="App screenshot 2"><img src="images/app2.jpg" alt="App screenshot"></a>
+        <a class="thumb" href="#" title="Plan 1"><img src="images/plan1.jpg" alt="Plan"></a>
+        <a class="thumb" href="#" title="Plan 2"><img src="images/plan2.jpg" alt="Plan"></a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Tech & Tools</h2>
+        <ul>
+          <li>Frontend: React, React Native (Expo), HTML/CSS, Tailwind (optional)</li>
+          <li>Backend: Node.js, Express, Firebase, MongoDB</li>
+          <li>Dev tools: Git/GitHub, Postman, VS Code</li>
+          <li>CAD: AutoCAD, ArchiCAD, DWG export</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Contact & Links</h2>
+        <p>Email: <a href="mailto:brianwan04@gmail.com" style="color:var(--accent)">brianwan04@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/brianwan04" target="_blank" style="color:var(--accent)">github.com/brianwan04</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/wanjala-brian-7a09b6189" target="_blank" style="color:var(--accent)">linkedin.com/in/yourprofile</a></p>
+        <div style="margin-top:10px">
+          <a class="socials" href="brianwan04@gmail.com">Email</a>
+          <a class="socials" href="https://wa.me/256705020202" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>How to request a quote</h2>
+      <ol>
+        <li>Email a short brief: project type (app or house plan), main features, site dimensions (if a plan), and budget range.</li>
+        <li>I’ll reply with a timeline and quote.</li>
+        <li>Work begins after agreement and (optionally) deposit.</li>
+      </ol>
+    </div>
+
+    <footer>
+      <div>© <strong>Brian</strong> — Web & Mobile Developer • Civil Engineering student</div>
+    </footer>
+  </div>
+</body>
+</html>
+
